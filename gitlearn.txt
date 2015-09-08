@@ -1,0 +1,103 @@
+对于git分支理解
+
+首先创建自己的分支，在指定目录下
+
+新建目录
+mkdir test
+
+git init 生成git仓库 .git文件对于存储版本库
+
+如果之前没有生成key 先生成，将公钥考入github里
+
+github中初次建立仓库，我们需要首次提交关联仓库
+
+git remote add origin adress 
+git push -u origin master(这里对应你要提交远程仓库)
+
+关联后，后期提交自动匹配到对应库
+
+
+
+关于分支初始生成master本地和远程分支，我们可以自己创建一个独立分支
+
+git branch branchname   / git checkout -b branchname   //分支创建
+
+可以生成远程对应分支，也可用于特殊情况下编辑文件运用，后期删除
+
+git命令
+
+git branch     查看本地分支
+git branch -r  查看远程分支
+git branch -a  查看所有相关的分支
+
+git remote  查看远程信息
+git remote -v  查看远程资源详细信息
+
+git log 查看记录修改编辑日志 ，对于恢复和修改需求
+git log --pretty=oneline  整理查看日志的可以美化下看
+
+git branch branchname  /  git checkout -b branchname（带有切换）  创建分支
+git status 查看文件修改状态
+git add 暂存文件修改
+git commit 提交修改  -m 修改描述 -a 提交所有
+git push 提交到记录
+
+比对文件修改
+git diff
+查看历史版本号
+git reflg
+
+删除文件
+git rm file
+
+有时我们恢复原修改
+在未提交commit 前 可通过git checkout --filename来取消
+
+如果已经提交了，来恢复到之前标注位置
+通过git remote --hard HEAD^来返回上一级 HEAD^^上两级  HEAD～100到100标注位置
+
+对于分支的删除
+git branch -d branchname 删除本地
+git branch -r -d branchname 删除远程
+
+切换分支
+git checkout branchname
+
+合并分支
+git merge branchname
+合并分支可以取消快速合并模式
+git merge -no-ff -m 'dd' branchname
+这样将来删除该分支，还可以找到之前分支信息
+
+暂存修改
+git stash branchname
+列出暂存的工作
+git stash list
+恢复工作
+git stash apply
+删除暂存区
+git stash drop
+可以直接命令
+git stash pop
+
+命令待续中。。。。。。
+
+
+资料很不错哦，值得收藏！！
+blog.jobbole.com/78960/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
