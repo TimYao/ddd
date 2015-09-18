@@ -1,7 +1,3 @@
-
-<<<<<<< HEAD
-aaaaaa  bbb   
-=======
 aaaaaa   2222
->>>>>>> dev
+
 
