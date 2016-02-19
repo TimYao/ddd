@@ -51,10 +51,19 @@ git reflg
 git rm file
 
 有时我们恢复原修改
-在未提交commit 前 可通过git checkout --filename来取消
+在未提交commit 前 可通过git checkout --filename来取消(回转到没修过前)
+
 
 如果已经提交了，来恢复到之前标注位置
-通过git remote --hard HEAD^来返回上一级 HEAD^^上两级  HEAD～100到100标注位置
+
+通过git reset --hard HEAD^来返回上一级 HEAD^^上两级  HEAD～100到100标注位置(恢复暂存和工作目录)
+git checkout HEAD test.txt 与git checkout -- test.txt 作用相同都是恢复到修改以前(操作后对应的暂存消失)
+git reset HEAD test.txt //恢复了暂存，但保存了修改内容，指向上一次的最近的commit
+git reset test.txt 同样功能
+
+
+
+
 
 对于分支的删除
 git branch -d branchname 删除本地
