@@ -1,10 +1,10 @@
 {
-  "name": "@t/cc",
+  "name": "@tpackage/cc",
   "version": "0.0.3",
   "description": "> TODO: description",
   "author": "timlieyao <timlieyao@didiglobal.com>",
   "homepage": "",
-  "license": "ISC",
+  "license": "MIT",
   "main": "lib/cc.js",
   "directories": {
     "lib": "lib",
@@ -19,5 +19,5 @@
   "scripts": {
     "test": "echo \"Error: run tests from root\" && exit 1"
   },
-  "gitHead": "6d70254342c3d48b0b3ea46722336e88e7b292fb"
+  "gitHead": "ef2e7a161b8403ff1f61afff6f56ddb52e2391c9"
 }
