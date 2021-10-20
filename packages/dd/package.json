@@ -1,5 +1,5 @@
 {
-  "name": "dd",
+  "name": "ii-dd",
   "version": "0.0.6",
   "description": "> TODO: description",
   "author": "timlieyao <timlieyao@didiglobal.com>",
@@ -22,5 +22,6 @@
   },
   "bugs": {
     "url": "https://github.com/TimYao/test/issues"
-  }
+  },
+  "gitHead": "de89c22cdc37690ae67ab2b39cbe431107c46730"
 }
