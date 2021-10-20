@@ -25,3 +25,11 @@ lerna 作为一款多功能包管理工具，具有灵活管理多包，使得�
  - 保证提交git仓库成功
 
  - lerna publish 发布包 
+
+ - lerna publish from-git/from-package 保证再次提交，不更新package.json
+
+整理：
+
+ 在lerna发布过程中会拿当前的本地包去和git远程仓库中包进行比对，找到对应的变更包进行版本更新然后再提交，这里要注意提交分支要统一，或者打tag带来的问题
+
+
